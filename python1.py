@@ -1,4 +1,6 @@
-	# INSTRUCTIONS
+	#!/usr/bin/env python3
+
+	#INSTRUCTIONS
 
 	# In case it is not clear, the Question appears first, then examples, then any hints and finally the function that you need to complete appears underneath:
 
@@ -34,8 +36,14 @@
 
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
-def one(input1, input2):
-	return ""
+# def one ( input1 , input2):
+# 	if len(input2)<len(input1):
+# 		return input1
+# 	elif len(input1)<len(input2):
+# 		return input2
+# 	elif len(input2)==len(input1):
+# 		return input1+" "+input2
+	
 
 
 
@@ -63,7 +71,17 @@ def one(input1, input2):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def two(input):
-	return ""
+	count =0
+	lowinput= input.lower()
+	if "bert" in lowinput:
+		while "bert" in 
+			clear=lowinput.remove("bert")
+			count +=1
+			if count>=2 
+				return clear
+			else:
+				return " "
+	
 
 
 
@@ -88,7 +106,15 @@ def two(input):
 	# No Hints for this question
 
 def three(arg1):
-	return "null"
+	if arg%3==0:
+		if arg%5==0:
+			return "fizzbuzz"
+		else:
+			return "fizz"
+	elif arg%5==0:
+		return "buzz"
+	else:
+		return "null"
 
 
 	# <QUESTION 4>
@@ -114,7 +140,16 @@ def three(arg1):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-	return 0
+	splitfour = four.split(),
+	sum = []
+	if arg1 !=0 or arg1!="":
+		for x in splitfour:
+			single = list(int(x))
+			for n in range(:len(single)):
+				sum.append(sungle[n])
+			return sum
+	else:
+		return 0
 
 	# <QUESTION 5>
 
@@ -142,6 +177,7 @@ def four(arg1):
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def five(input):
+
 	return []
 
 	# <QUESTION 6>
@@ -163,6 +199,12 @@ def five(input):
 
 
 def six(input):
+	if "ie" in input or "ei" in input:
+		if "cie" in input:
+			return False
+		elif "cei" in input:
+			return True
+		elif 
     return False
 
 	# <QUESTION 7>
@@ -180,7 +222,13 @@ def six(input):
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    return 0
+	Vcount = []
+	linput=list(input.lower())
+	vowels= ["a","e","i","o","u"]
+	for x in linput:
+		if x in vowels:
+			Vcount.append(x)
+    return Vcount.count()
 
 	# <QUESTION 8>
 
@@ -198,7 +246,10 @@ def seven(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
-	return 1
+	n=1
+	for x in range(0:input+1)
+		n=n*x
+	return n
 
 	# <QUESTION 9>
 
@@ -239,4 +290,10 @@ def nine(inputString, char):
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
  
 def ten(string, int, char):
-	return False
+	if len(string)<= int <=len(string):
+		if string(int)==char:
+			return True
+		else:
+			return False
+	else:
+		return False
